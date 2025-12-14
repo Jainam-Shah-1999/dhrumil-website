@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
-    const navWrapper = document.querySelector('.nav-wrapper'); // TARGET CHANGED
+    const navWrapper = document.querySelector('.nav-wrapper');
     const navLinks = document.querySelectorAll('.nav-menu a');
 
     // 1. Mobile Menu Toggle
     menuToggle.addEventListener('click', () => {
-        navWrapper.classList.toggle('active'); // TOGGLE CHANGED
+        navWrapper.classList.toggle('active');
     });
 
     // 2. Smooth Scrolling & Close Menu on Link Click
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Close the mobile menu if it's open
                 if (navWrapper.classList.contains('active')) {
-                    navWrapper.classList.remove('active'); // CLASS NAME MATCHES TARGET
+                    navWrapper.classList.remove('active');
                 }
 
                 const targetSection = document.querySelector(targetId);
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Optional: Close menu when clicking outside of it on mobile
+    // 3. Close menu when clicking outside of it on mobile
     document.addEventListener('click', (e) => {
-        if (!navWrapper.contains(e.target) && !menuToggle.contains(e.target) && navWrapper.classList.contains('active')) {
+        if (window.innerWidth <= 900 && !navWrapper.contains(e.target) && !menuToggle.contains(e.target) && navWrapper.classList.contains('active')) {
             navWrapper.classList.remove('active');
         }
     });
