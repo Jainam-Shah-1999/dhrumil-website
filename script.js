@@ -1,29 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const navWrapper = document.querySelector('.nav-wrapper'); // TARGET CHANGED
     const navLinks = document.querySelectorAll('.nav-menu a');
 
     // 1. Mobile Menu Toggle
     menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+        navWrapper.classList.toggle('active'); // TOGGLE CHANGED
     });
 
     // 2. Smooth Scrolling & Close Menu on Link Click
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            // Check if the link is an internal anchor
             const targetId = this.getAttribute('href');
             if (targetId.startsWith('#')) {
                 e.preventDefault();
                 
                 // Close the mobile menu if it's open
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
+                if (navWrapper.classList.contains('active')) {
+                    navWrapper.classList.remove('active'); // CLASS NAME MATCHES TARGET
                 }
 
                 const targetSection = document.querySelector(targetId);
                 
-                // Use scrollIntoView for smooth scroll effect
                 if (targetSection) {
                     targetSection.scrollIntoView({ behavior: 'smooth' });
                 }
@@ -33,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Optional: Close menu when clicking outside of it on mobile
     document.addEventListener('click', (e) => {
-        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target) && navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
+        if (!navWrapper.contains(e.target) && !menuToggle.contains(e.target) && navWrapper.classList.contains('active')) {
+            navWrapper.classList.remove('active');
         }
     });
 });
