@@ -3,223 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velocity Ledger - Delivering Financial Confidence</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Velocity Ledger | Outsourced Accounting & Compliance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="header-container">
+    <nav class="top-nav">
+        <div class="nav-container">
             <div class="logo">
-                <img src="assets/logo.png" alt="Velocity Ledger Logo">
+                <img src="logo.png" alt="Velocity Ledger Logo">
             </div>
-            
-            <div class="nav-wrapper">
-                <nav class="nav-menu">
-                    <a href="#home">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#whyus">Why Us</a>
-                    <a href="#contact">Contact Us</a>
-                </nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#why-us">Why us</a></li>
+                <li><a href="#infrastructure">Infrastructure</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Leading service providers for Book keeping, Compilation, Taxation</h1>
+            <p>Delivering Financial Confidence</p>
+            <a href="mailto:contacts.velocity@velocityledger.in" class="cta-button">Book a Trial</a>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content-container">
-                <h1>Leading service providers for Bookkeeping, Compilation, and Taxation.</h1>
-                <p>Delivering Financial Confidence.</p>
-                <a href="#services" class="btn btn-primary">Explore Services</a>
-            </div>
-        </section>
-
-        <section id="about" class="section about-us">
-            <div class="content-wrapper">
-                <h2>About Velocity Ledger</h2>
-                <div class="about-content">
-                    <p>At Velocity Ledger, we are a team of experienced accounting professionals dedicated to delivering high-quality outsourced accounting and compliance services to our clients. Led by Dhrumil Dhruv, a chartered accountant with over 5 years of experience in public accounting, we specialize in supporting US and Canadian CPA, EA, advisory, tax, and accounting firms with reliable, scalable back-office solutions.</p>
-                    <p>Our service offerings include bookkeeping, compilation engagements, audit support, and end-to-end accounting services, along with US and Canadian tax compliance. We prepare and support US individual and business tax returns, including federal and state filings, as well as Canadian T1 and T2 income tax returns. In addition, we provide project financing and financial support for fundraising initiatives, helping businesses and firms present accurate, decision-ready financial information to lenders and investors.</p>
-                    <p>Our mission is to help our clients grow by taking ownership of their accounting, tax, and compliance functions. We understand that accounting and tax work can be time-intensive and technically complex. By outsourcing these functions to Velocity Ledger, our clients gain access to accurate, up-to-date books and well-structured financial data, enabling informed financial and tax decision-making while freeing up internal capacity to focus on client advisory and business development.</p>
-                    <p>We are proficient in leading accounting platforms, including QuickBooks, Xero, and R365, and we leverage modern tax software and secure technology environments to ensure efficiency, accuracy, and compliance across all engagements.</p>
-                    <p>At Velocity Ledger, we are committed to exceptional service quality, confidentiality, and long-term partnerships. We take the time to understand each client’s workflows, service standards, and delivery expectations, allowing us to provide customized outsourcing solutions aligned with firm-level processes.</p>
-                    <p class="contact-cta">Contact us today to learn how Velocity Ledger can become your trusted outsourcing partner and support your firm’s growth.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="whyus" class="section why-us">
-            <div class="content-wrapper">
-                <h2>Why Choose Velocity Ledger?</h2>
-                <div class="why-us-content">
-                    <div class="key-reason-card">
-                        <i class="fas fa-gem"></i>
-                        <h3>Big 6 Process Quality</h3>
-                        <p>Our workflows are structured and executed based on the highest standards, mirroring the rigor and quality controls found in top-tier public accounting firms.</p>
-                    </div>
-                    <div class="key-reason-card">
-                        <i class="fas fa-clock"></i>
-                        <h3>Time & Cost Efficiency</h3>
-                        <p>Free up internal capacity and significantly reduce overhead costs by leveraging our skilled, scalable remote teams.</p>
-                    </div>
-                     <div class="key-reason-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Security & Compliance</h3>
-                        <p>We operate using secure technology and robust internal controls to ensure client data confidentiality and compliance excellence.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="section services">
-            <div class="content-wrapper">
-                <h2>Our Service Offerings</h2>
-                <div class="service-grid">
-                    
-                    <div class="service-card">
-                        <i class="fas fa-book"></i>
-                        <h3>Bookkeeping & Compilation</h3>
-                        <p>End-to-end bookkeeping, payroll support, accounts payable/receivable, and compilation engagements compliant with relevant accounting standards.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                        <h3>Tax Preparation & Compliance</h3>
-                        <p>US Individual & Business tax returns (Federal & State), Canadian T1 (Personal), T2 (Corporate), T3 (Trust) returns, and family/private trust setup and management.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <i class="fas fa-balance-scale"></i>
-                        <h3>Assurance & Audit Support</h3>
-                        <p>Audit, Review, and Compilation engagements backed by professionals with Big 6 experience, including support for EBP, HUD, and NFP audits.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Financial Advisory</h3>
-                        <p>Project financing, financial support for fundraising initiatives, budgeting, forecasting, and strategic decision-making support.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="audit" class="section audit">
-             <div class="content-wrapper">
-                <h2>Assurance & Audit Engagements</h2>
-                <div class="audit-content">
-                    <p>Welcome to Velocity Ledger, where we provide high-quality assurance and accounting services tailored to organizations across a wide range of industries. Backed by a team of seasoned professionals with Big 6 public accounting experience, we specialize in delivering audit, review, and compilation engagements with precision, integrity, and efficiency.</p>
-                    <p>We offer audit engagements, the highest level of assurance for financial statements. Our audits are designed to provide reasonable assurance that financial statements are fairly presented in accordance with applicable standards. This includes a comprehensive assessment of internal controls, detailed analytical procedures, third-party confirmations, inspection of supporting documentation, asset observations, and in-depth discussions with management. Audited financial statements are often required by regulators, lenders, or other stakeholders, and we take pride in conducting thorough yet practical audits tailored to each client’s unique business environment.</p>
-                    <p>In addition to audits, we provide review and compilation engagements, offering flexible assurance solutions to meet varying reporting needs. Review engagements provide limited assurance through analytical procedures and inquiries, while compilation engagements assist management in presenting financial information without providing assurance—both delivered with the same level of professionalism and technical rigor.</p>
-                    
-                    <h3 class="industry-title">Our Industry-Focused Audit Expertise Includes:</h3>
-                    <ul class="industry-list">
-                        <li><i class="fas fa-angle-right"></i> Employee Benefit Plan (EBP) audits under ERISA</li>
-                        <li><i class="fas fa-angle-right"></i> HUD audits for organizations receiving federal housing assistance</li>
-                        <li><i class="fas fa-angle-right"></i> Not-for-Profit (NFP) audits</li>
-                        <li><i class="fas fa-angle-right"></i> Professional Services firms</li>
-                        <li><i class="fas fa-angle-right"></i> Life Sciences and Technology companies</li>
-                    </ul>
-                    <p class="audit-cta">At Velocity Ledger, we believe that well-executed assurance engagements go beyond compliance—they add value. We are committed to delivering accurate financial reporting, regulatory compliance, and actionable insights, while building long-term relationships founded on trust, reliability, and technical excellence. Contact us today to learn how our assurance and accounting services can support your organization’s financial reporting needs with confidence and clarity.</p>
-                </div>
-             </div>
-        </section>
-
-        <section id="workflow" class="section workflow">
-             <div class="content-wrapper">
-                <h2>Work Flow & IT Infrastructure</h2>
-                <div class="workflow-content">
-                    <p>We maintain a secure, cloud-based IT environment and a defined workflow to ensure efficiency and data security for all client engagements.</p>
-                    <div class="process-steps">
-                        <div class="step-card">
-                            <i class="fas fa-people-arrows"></i>
-                            <h4>1. Engagement Setup</h4>
-                            <p>Secure client portal access and assignment to a dedicated, professional team.</p>
-                        </div>
-                        <div class="step-card">
-                            <i class="fas fa-cogs"></i>
-                            <h4>2. Processing & Review</h4>
-                            <p>Execution of work using modern software (QuickBooks, Xero, R365) followed by a layered internal QA review.</p>
-                        </div>
-                        <div class="step-card">
-                            <i class="fas fa-paper-plane"></i>
-                            <h4>3. Delivery & Sign-off</h4>
-                            <p>Timely delivery of final financial packages, tax returns, or reports for client review and approval.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact">
-            <div class="content-wrapper">
-                <h2>Get In Touch</h2>
-                <div class="contact-grid">
-                    
-                    <div class="contact-info">
-                        <h3>Office & Communication</h3>
-                        
-                        <p class="contact-detail"><i class="fas fa-map-marker-alt"></i> 
-                            Office Address: 306, Anam – 1, Oppo. Parimal Garden, Ahmedabad, 380006
-                        </p>
-                        
-                        <p class="contact-detail"><i class="fas fa-phone-alt"></i> 
-                            Direct: <a href="tel:+918734021900">+91 87340 21900</a>
-                        </p>
-                        
-                        <p class="contact-detail"><i class="fas fa-envelope"></i> 
-                            Inquiries: <a href="mailto:contacts.velocity@velocityledger.in">contacts.velocity@velocityledger.in</a>
-                        </p>
-
-                         <p class="contact-detail"><i class="fas fa-envelope"></i> 
-                            General: <a href="mailto:info@velocityledger.in">info@velocityledger.in</a>
-                        </p>
-                        
-                        <div class="contact-social">
-                            <a href="https://www.linkedin.com/company/velocityledger" target="_blank" aria-label="LinkedIn Company"><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a href="https://www.linkedin.com/in/dhrumildhruv" target="_blank" aria-label="Dhrumil Dhruv's Profile"><i class="fas fa-user-tie fa-2x"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="map-embed">
-                        <h3 class="map-title">Locate Us</h3>
-                        <iframe src="https://maps.app.goo.gl/SSNb5HGtUNSiZnfG6" 
-                                width="100%" height="300" style="border:0;" 
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                    <div class="book-trial-section">
-                        <h3>Book a Trial/Inquiry</h3>
-                        <p>For trial engagements or specific service inquiries, please email us directly. All formal inquiries are managed via:</p>
-                        <a href="mailto:contacts.velocity@velocityledger.in" class="btn btn-primary">Email Inquiry (contacts.velocity@velocityledger.in)</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content-wrapper">
-            <div class="footer-contact">
-                <h4>Velocity Ledger</h4>
-                <p>306, Anam – 1, Parimal Garden, Ahmedabad</p>
-            </div>
-            <div class="footer-links">
-                <a href="#home">Home</a> | 
-                <a href="#services">Services</a> | 
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/company/velocityledger" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:info@velocityledger.in" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="text-block">
+                <p>At Velocity Ledger, we are a team of experienced accounting professionals dedicated to delivering high-quality outsourced accounting and compliance services to our clients. Led by Dhrumil Dhruv, a chartered accountant with over 5 years of experience in public accounting, we specialize in supporting US and Canadian CPA, EA, advisory, tax, and accounting firms with reliable, scalable back-office solutions.</p>
+                <p>Our service offerings include bookkeeping, compilation engagements, audit support, and end-to-end accounting services, along with US and Canadian tax compliance. We prepare and support US individual and business tax returns, including federal and state filings, as well as Canadian T1 and T2 income tax returns. In addition, we provide project financing and financial support for fundraising initiatives, helping businesses and firms present accurate, decision-ready financial information to lenders and investors.</p>
+                <p>Our mission is to help our clients grow by taking ownership of their accounting, tax, and compliance functions. We understand that accounting and tax work can be time-intensive and technically complex. By outsourcing these functions to Velocity Ledger, our clients gain access to accurate, up-to-date books and well-structured financial data, enabling informed financial and tax decision-making while freeing up internal capacity to focus on client advisory and business development.</p>
+                <p>We are proficient in leading accounting platforms, including QuickBooks, Xero, and R365, and we leverage modern tax software and secure technology environments to ensure efficiency, accuracy, and compliance across all engagements.</p>
+                <p>At Velocity Ledger, we are committed to exceptional service quality, confidentiality, and long-term partnerships. We take the time to understand each client’s workflows, service standards, and delivery expectations, allowing us to provide customized outsourcing solutions aligned with firm-level processes.</p>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p>© 2024 Velocity Ledger. Delivering Financial Confidence. All Rights Reserved.</p>
+    </section>
+
+    <section id="services" class="content-section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            
+            <div class="service-box">
+                <h3>Book keeping</h3>
+                <p>Velocity Ledger offers comprehensive bookkeeping services to help businesses stay on top of their finances. Our outsourced bookkeeping services take the hassle off your plate, allowing you to focus on your core business while we take care of your bookkeeping needs.</p>
+                <p>Our team of expert bookkeepers is proficient in using various accounting software, including Caseware. We can help you set up your books, reconcile bank and credit card statements, manage accounts payable and accounts receivable, and produce financial reports customized to your business needs.</p>
+                <p>By outsourcing your bookkeeping to us, you can make informed financial and tax decisions based on accurate data and up-to-date books. This allows you to save time and money while improving your financial decision-making capabilities.</p>
+                <p>Whether you’re a small business owner or a large corporation, Velocity Ledger can help you streamline your bookkeeping processes and gain better insights into your financial health. Contact us today to learn more about our bookkeeping services and how we can help your business thrive.</p>
+                <h4>Our Bookkeeping services</h4>
+                <ul class="check-list">
+                    <li>Year-end Bookkeeping</li>
+                    <li>Monthly Bookkeeping</li>
+                    <li>Catch up & Clean up</li>
+                    <li>Bank Reconciliation</li>
+                    <li>Account receivable/payable</li>
+                    <li>Financial statement analysis</li>
+                    <li>Preparation of Cash Flow Statement</li>
+                </ul>
+            </div>
+
+            <div class="service-box">
+                <h3>Tax preparation</h3>
+                <p>Our team of experienced tax professionals will assist you in taking on more work while ensuring timely delivery of high-quality output, increasing your profitability, and reducing operating expenses. At Velocity Ledger, we understand the importance of using cutting-edge tax software and technology to provide our clients with the best possible results. That’s why we utilize Intuit’s Lacerte, Creative Solutions’ UltraTax, Intuit ProSeries, ATX, and Drake to ensure that your tax returns are processed accurately and efficiently.</p>
+                <p>By choosing Velocity Ledger, you’ll be saving yourself the hassle of scouting, evaluating, and training personnel, all at a fraction of the cost. Trust us to handle your tax preparation needs, and experience the peace of mind that comes with knowing your financials are in expert hands. include T1- Personal Income Tax returns and T2 – Corporate tax Returns T3 – Trust Return and manage and setup family and private trust.</p>
+                <h4>Our Preparation Services</h4>
+                <ul class="check-list">
+                    <li>Individual returns- Form 1040</li>
+                    <li>Partnership returns- Form 1065</li>
+                    <li>S-corp returns- Form 1120-S</li>
+                    <li>C-corp returns- Form 1120-C</li>
+                    <li>NFP returns- Form 990</li>
+                </ul>
+            </div>
+
+            <div class="service-box">
+                <h3>Audit</h3>
+                <p>Welcome to Velocity Ledger, where we provide high-quality assurance and accounting services tailored to organizations across a wide range of industries. Backed by a team of seasoned professionals with Big 6 public accounting experience, we specialize in delivering audit, review, and compilation engagements with precision, integrity, and efficiency.</p>
+                <p>We offer audit engagements, the highest level of assurance for financial statements. Our audits are designed to provide reasonable assurance that financial statements are fairly presented in accordance with applicable standards. This includes a comprehensive assessment of internal controls, detailed analytical procedures, third-party confirmations, inspection of supporting documentation, asset observations, and in-depth discussions with management. Audited financial statements are often required by regulators, lenders, or other stakeholders, and we take pride in conducting thorough yet practical audits tailored to each client’s unique business environment.</p>
+                <p>In addition to audits, we provide review and compilation engagements, offering flexible assurance solutions to meet varying reporting needs. Review engagements provide limited assurance through analytical procedures and inquiries, while compilation engagements assist management in presenting financial information without providing assurance—both delivered with the same level of professionalism and technical rigor.</p>
+                <h4>Our industry-focused audit expertise includes:</h4>
+                <ul class="check-list">
+                    <li>Employee Benefit Plan (EBP) audits under ERISA</li>
+                    <li>HUD audits for organizations receiving federal housing assistance</li>
+                    <li>Not-for-Profit (NFP) audits</li>
+                    <li>Professional Services firms</li>
+                    <li>Life Sciences and Technology companies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="software" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Software used</h2>
+            <div class="software-container">
+                <div class="software-text">
+                    <p>Caseware</p>
+                    <p>QuickBooks, Xero, R365, Lacerte, UltraTax, ProSeries, ATX, Drake.</p>
+                </div>
+                <div class="software-image">
+                    <div class="image-placeholder">Software Dashboard / Logo Integration Image</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="content-section navy-bg text-white">
+        <div class="container">
+            <h2 class="section-title white-text">WHY US?</h2>
+            <div class="grid-layout">
+                <div class="grid-item"><h3>Cost savings</h3><p>Offshore accounting teams often have lower labor costs, which can translate to significant cost savings for US based firms. This can help firms reduce their operating expenses and increase profitability.</p></div>
+                <div class="grid-item"><h3>Improved efficiency</h3><p>Offshore accounting teams are often highly specialized and experienced in their field, which can help improve the efficiency of accounting processes. This can help US firms save time and reduce the risk of errors or delays in financial reporting.</p></div>
+                <div class="grid-item"><h3>Scalability</h3><p>Offshore accounting teams can be scaled up or down depending on the needs of the US firm, providing greater flexibility and agility in managing client workloads.</p></div>
+                <div class="grid-item"><h3>Increased capacity</h3><p>Outsourcing accounting services to an offshore team can help US firms increase their capacity to take on more work and clients. This can help firms grow their business without having to hire additional staff or expand their physical office space.</p></div>
+                <div class="grid-item"><h3>Access to specialized skills</h3><p>Offshore accounting teams often have access to specialized skills and expertise that may not be available locally. This can help US firms expand their service offerings and provide additional value to their clients.</p></div>
+                <div class="grid-item"><h3>24/7 operations</h3><p>Offshore accounting teams can operate on a different time zone, providing the opportunity for 24/7 operations. This can help US firms meet tight deadlines and provide faster turnaround times for clients.</p></div>
+            </div>
+
+            <h2 class="section-title white-text" style="margin-top: 50px;">WORK FLOW</h2>
+            <div class="workflow-steps">
+                <div class="step"><span>1</span><h4>Initial consultation</h4><p>We begin with an initial consultation to understand your business needs.</p></div>
+                <div class="step"><span>2</span><h4>Proposal and engagement</h4><p>We provide a proposal outlining scope, timeline, and fees.</p></div>
+                <div class="step"><span>3</span><h4>Data collection</h4><p>We collect financial statements and documents via secure platforms.</p></div>
+                <div class="step"><span>4</span><h4>Onboarding</h4><p>We set up your charts of accounts and bank feeds in our system.</p></div>
+                <div class="step"><span>5</span><h4>Ongoing communication</h4><p>Regular reports and updates to ensure your needs are being met.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infrastructure" class="content-section">
+        <div class="container">
+            <h2 class="section-title">IT infrastructure & Security measures</h2>
+            <div class="infra-grid">
+                <ul class="infra-list">
+                    <li>Desktop and other technology with latest configuration</li>
+                    <li>VPN protection while working on client server</li>
+                    <li>Disabled usage of external plug-in devices</li>
+                    <li>100% on-site functioning. No WFH.</li>
+                    <li>Centralized control</li>
+                    <li>Functional access to client data</li>
+                    <li>Regular security updates</li>
+                </ul>
+                <ul class="infra-list">
+                    <li>Internet browsing restricted by firewall</li>
+                    <li>Licensed support software</li>
+                    <li>Secured workstations with password protection</li>
+                    <li>Regular system audit</li>
+                    <li>Restriction on printing of documents</li>
+                    <li>Multiple LAN networks</li>
+                    <li>Restricted access to harmful websites</li>
+                    <li>Automatic backup</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-details">
+                    <h3>Contact Us</h3>
+                    <p><strong>Name:</strong> Velocity Ledger</p>
+                    <p><strong>Office:</strong> 306, Anam – 1 Oppo. Parimal Garden Ahmedabad 380006</p>
+                    <p><strong>Phone:</strong> +91 87340 21900</p>
+                    <p><strong>Inquiry:</strong> contacts.velocity@velocityledger.in</p>
+                    <p><strong>Email:</strong> info@velocityledger.in</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/velocityledger"><i class="fab fa-linkedin"></i> Company Page</a>
+                        <br>
+                        <a href="https://www.linkedin.com/in/dhrumildhruv"><i class="fab fa-linkedin"></i> Get in touch (Dhrumil Dhruv)</a>
+                    </div>
+                </div>
+                <div class="map-area">
+                    <div class="map-placeholder">
+                        <p>Google Map View:<br>306, Anam – 1, Ahmedabad</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
