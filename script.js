@@ -8,14 +8,14 @@ menu.addEventListener('click', function() {
 });
 
 // Close mobile menu when a link is clicked
-document.querySelectorAll('.nav-menu a').forEach(link => {
+menuLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         menuLinks.classList.remove('active');
     });
 });
 
 // Smooth Scroll for Navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+menuLinks.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
