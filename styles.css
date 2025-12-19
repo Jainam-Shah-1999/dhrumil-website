@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0a2342;
-    --secondary-color: #2ca58d;
+    --secondary-color: #1f6fb2; /* adjusted to blue accent to match logo */
     --text-dark: #333;
     --text-light: #f4f4f4;
     --bg-gray: #f9f9f9;
@@ -33,12 +33,13 @@ body {
 }
 
 .nav-container {
-    width: 90%;
+    width: 100%; /* use full width so there isn't extra whitespace on the right */
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* put logo and menu together */
     align-items: center;
+    gap: 20px;
 }
 
 .logo img {
@@ -49,6 +50,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
+    margin-left: 20px; /* bring menu closer to logo */
 }
 
 .nav-menu li a {
@@ -61,6 +63,16 @@ body {
 
 .nav-menu li a:hover {
     color: var(--secondary-color);
+}
+
+/* Hide mobile hamburger on desktop and ensure it moves to the far right when visible on mobile */
+.menu-toggle {
+    display: none; /* hidden on desktop */
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle { display: block; margin-left: auto; }
+    .menu-toggle .bar { background: var(--primary-color); }
 }
 
 /* Hero Section */
@@ -127,6 +139,15 @@ body {
     text-align: justify;
 }
 
+/* Ensure text is readable on dark/navy backgrounds */
+.navy-bg, .navy-bg p, .navy-bg .grid-item p, .navy-bg .step p {
+    color: var(--text-light);
+}
+.navy-bg .section-title { color: var(--text-light); border-bottom-color: rgba(255,255,255,0.12); }
+.navy-bg .grid-item h3 { color: var(--text-light); }
+.navy-bg .workflow-steps .step h4 { color: var(--text-light); }
+.navy-bg .step span { background: var(--secondary-color); color: #fff; }
+
 /* Services Boxes */
 .service-box {
     background: #fff;
@@ -174,9 +195,9 @@ body {
 .infra-list li { margin-bottom: 10px; list-style-type: square; margin-left: 20px;}
 
 /* Footer & Contact */
-.footer { background: #111; color: #ccc; padding: 60px 0; }
-.footer-content { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
-.map-placeholder { background: #333; height: 250px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.footer { background: var(--primary-color); color: var(--text-light); padding: 60px 0; }
+.footer .map-placeholder { background: rgba(255,255,255,0.04); color: var(--text-light); }
+.footer a { color: var(--text-light); }
 
 /* Responsive Navigation */
 @media screen and (max-width: 768px) {

@@ -1,0 +1,119 @@
+Top Nav:
+left side logo image  height 200px, width 300px
+right side collapsible menu when screensize reduces
+About
+Services
+Software
+Why us
+Infrastructure
+Contact
+
+About:
+ At Velocity Ledger, we are a team of experienced accounting professionals dedicated to delivering high-quality outsourced accounting and compliance services to our clients. Led by Dhrumil Dhruv, a chartered accountant with over 5 years of experience in public accounting, we specialize in supporting US and Canadian CPA, EA, advisory, tax, and accounting firms with reliable, scalable back-office solutions.
+Our service offerings include bookkeeping, compilation engagements, audit support, and end-to-end accounting services, along with US and Canadian tax compliance. We prepare and support US individual and business tax returns, including federal and state filings, as well as Canadian T1 and T2 income tax returns. In addition, we provide project financing and financial support for fundraising initiatives, helping businesses and firms present accurate, decision-ready financial information to lenders and investors.
+Our mission is to help our clients grow by taking ownership of their accounting, tax, and compliance functions. We understand that accounting and tax work can be time-intensive and technically complex. By outsourcing these functions to Velocity Ledger, our clients gain access to accurate, up-to-date books and well-structured financial data, enabling informed financial and tax decision-making while freeing up internal capacity to focus on client advisory and business development.
+We are proficient in leading accounting platforms, including QuickBooks, Xero, and R365, and we leverage modern tax software and secure technology environments to ensure efficiency, accuracy, and compliance across all engagements.
+At Velocity Ledger, we are committed to exceptional service quality, confidentiality, and long-term partnerships. We take the time to understand each client’s workflows, service standards, and delivery expectations, allowing us to provide customized outsourcing solutions aligned with firm-level processes
+
+Services
+Book keeping: Velocity Ledge roffers comprehensive bookkeeping services to help businesses stay on top of their finances. Our outsourced bookkeeping services take the hassle off your plate, allowing you to focus on your core business while we take care of your bookkeeping needs.
+Our team of expert bookkeepers is proficient in using various accounting software, including Caseware. We can help you set up your books, reconcile bank and credit card statements, manage accounts payable and accounts receivable, and produce financial reports customized to your business needs.
+By outsourcing your bookkeeping to us, you can make informed financial and tax decisions based on accurate data and up-to-date books. This allows you to save time and money while improving your financial decision-making capabilities.
+Whether you’re a small business owner or a large corporation, Velocity Ledger can help you streamline your bookkeeping processes and gain better insights into your financial health. Contact us today to learn more about our bookkeeping services and how we can help your business thrive.
+Our Bookkeeping services
+Year-end Bookkeeping
+Monthly Bookkeeping
+Catch up & Clean up
+Bank Reconciliation
+Account receivable/payable
+Financial statement analysis
+Preparation of Cash Flow Statement
+
+
+Tax preparation:
+Our team of experienced tax professionals will assist you in taking on more work while ensuring timely delivery of high-quality output, increasing your profitability, and reducing operating expenses.
+At Velocity Ledger, we understand the importance of using cutting-edge tax software and technology to provide our clients with the best possible results. That’s why we utilize Intuit’s Lacerte, Creative Solutions’ UltraTax, Intuit ProSeries, ATX, and Drake to ensure that your tax returns are processed accurately and efficiently.
+By choosing Velocity Ledger, you’ll be saving yourself the hassle of scouting, evaluating, and training personnel, all at a fraction of the cost. Trust us to handle your tax preparation needs, and experience the peace of mind that comes with knowing your financials are in expert hands.  include T1- Personal Income Tax returns and T2 – Corporate tax Returns T3 – Trust Return and manage and setup family and private trust
+
+
+Our Preparation Services
+Individual returns- Form 1040
+Partnership returns- Form 1065
+S-corp returns- Form 1120-S
+C-corp returns- Form 1120-C
+NFP returns- Form 990
+
+
+Audit:
+Audit :- Welcome to Velocity Ledger, where we provide high-quality assurance and accounting services tailored to organizations across a wide range of industries. Backed by a team of seasoned professionals with Big 6 public accounting experience, we specialize in delivering audit, review, and compilation engagements with precision, integrity, and efficiency.
+We offer audit engagements, the highest level of assurance for financial statements. Our audits are designed to provide reasonable assurance that financial statements are fairly presented in accordance with applicable standards. This includes a comprehensive assessment of internal controls, detailed analytical procedures, third-party confirmations, inspection of supporting documentation, asset observations, and in-depth discussions with management. Audited financial statements are often required by regulators, lenders, or other stakeholders, and we take pride in conducting thorough yet practical audits tailored to each client’s unique business environment.
+In addition to audits, we provide review and compilation engagements, offering flexible assurance solutions to meet varying reporting needs. Review engagements provide limited assurance through analytical procedures and inquiries, while compilation engagements assist management in presenting financial information without providing assurance—both delivered with the same level of professionalism and technical rigor.
+Our industry-focused audit expertise includes:
+Employee Benefit Plan (EBP) audits under ERISA
+HUD audits for organizations receiving federal housing assistance
+Not-for-Profit (NFP) audits
+Professional Services firms
+Life Sciences and Technology companies
+
+Software used:
+Caseware
+	add a space for an image
+
+WHY US?
+Cost savings
+Offshore accounting teams often have lower labor costs, which can translate to significant cost savings for US based firms. This can help firms reduce their operating expenses and increase profitability.
+Improved efficiency
+Offshore accounting teams are often highly specialized and experienced in their field, which can help improve the efficiency of accounting processes. This can help US firms save time and reduce the risk of errors or delays in financial reporting.
+Scalability
+Offshore accounting teams can be scaled up or down depending on the needs of the US firm, providing greater flexibility and agility in managing client workloads.
+Increased capacity
+Outsourcing accounting services to an offshore team can help US firms increase their capacity to take on more work and clients. This can help firms grow their business without having to hire additional staff or expand their physical office space.
+Access to specialized skills
+Offshore accounting teams often have access to specialized skills and expertise that may not be available locally. This can help US firms expand their service offerings and provide additional value to their clients.
+24/7 operations
+Offshore accounting teams can operate on a different time zone, providing the opportunity for 24/7 operations. This can help US firms meet tight deadlines and provide faster turnaround times for clients
+WORK FLOW
+1
+Initial consultation
+We begin with an initial consultation with the client to understand their business, their accounting needs, and their pain points. This helps us determine whether we are the right fit for the client and whether we can provide the services they require.
+2
+Proposal and engagement letter
+If we determine that we are a good fit for the client, we will provide a proposal and engagement letter that outlines the scope of work, the timeline, the fees, and the terms and conditions of our engagement. This helps ensure that both parties are on the same page before we begin work.
+3
+Data collection
+Once the client has signed the engagement letter, we will begin the process of collecting data from the client. This may include financial statements, bank statements, invoices, receipts, and other relevant documents. We may use a secure file-sharing platform to ensure that all data is collected and stored securely.
+4
+Onboarding
+Once we have collected all the necessary data, we will onboard the client onto our accounting system. This may include setting up accounting software, chart of accounts, bank feeds, and other relevant information. We will also ensure that all data is accurately entered into the system.
+5
+Ongoing communication
+Throughout the engagement, we will maintain ongoing communication with the client to ensure that their accounting needs are being met. We may provide regular reports and updates on financial performance, and we will be available to answer any questions or concerns the client may have.
+By following this workflow, we can ensure that we provide high-quality outsourced accounting
+services to our clients and that we meet their specific accounting needs.
+
+IT infrastructure & Security measures
+Desktop and other technology with latest configuration
+VPN protection while working on client server
+Disabled usage of external plug-in devices
+100% on-site functioning. No WFH.
+Centralized control
+Functional access to client data
+Regular security updates
+Internet browsing restricted by firewall
+Licensed support software
+Secured workstations with password protection
+Regular system audit
+Restriction on printing of documents
+Multiple LAN networks
+Restricted access to harmful websites
+Automatic backup 
+
+Contact us today to learn how our assurance and accounting services can support your organization’s financial reporting needs with confidence and clarity.
+Name  : -  Velocity Ledger 
+Changes Contact +91 87340 21900  email:- contacts.velocity@velocityledger.in  (inquiry should come on email) (book trial -data will come where)
+Email  info@velocityledger.in 
+Linkedin Page Link :- https://www.linkedin.com/company/velocityledger 
+Home Page Image :-   Leading service providers for  Book keeping, Compilation, Taxation  Delivering Financial Confidence or suggest some
+Office : - 306, Anam – 1 Oppo. Parimal Garden Ahmedabad  380006 Delivering Financial Confidence
+Pls take snip of google map 
+Get in touch : -  https://www.linkedin.com/in/dhrumildhruv 
