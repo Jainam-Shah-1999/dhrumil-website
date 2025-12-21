@@ -78,14 +78,19 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(10, 35, 66, 0.8), rgba(10, 35, 66, 0.8)), url('hero.jpg');
-    background-size: cover;
-    background-position: center;
+    /* Primary: Unsplash professional/team image (royalty-free); fallbacks to local files */
+    background: linear-gradient(rgba(10,35,66,0.65), rgba(10,35,66,0.65)),
+                url('assets/hero-professional.jpg'),
+                url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80'),
+                url('hero.jpg');
+    background-size: cover, cover, cover;
+    background-position: center center, center center, center center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-top: 100px;
+    color: #fff;
 }
 
 .hero-overlay h1 {
@@ -109,6 +114,60 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
+
+.hero-overlay h1 { text-shadow: 0 10px 30px rgba(2,8,20,0.6); }
+
+/* Hover polish for hero CTA */
+.cta-button:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(10,35,66,0.18); transition: transform 220ms var(--anim-easing); }
+[data-anim] {
+    opacity: 0;
+    transform: translateY(20px) translateZ(0);
+    will-change: opacity, transform;
+    transition-property: opacity, transform;
+    transition-duration: var(--anim-duration);
+    transition-timing-function: var(--anim-easing);
+    transition-delay: var(--delay, 0ms);
+}
+
+[data-anim="fade-up"] { transform: translateY(22px); }
+[data-anim="slide-left"] { transform: translateX(-22px) rotateZ(-0.2deg); }
+[data-anim="slide-right"] { transform: translateX(22px) rotateZ(0.2deg); }
+[data-anim="zoom-in"] { transform: scale(.96); opacity: 0; }
+
+[data-anim].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Subtle hover interactions for interactive blocks */
+.service-box, .grid-item, .step, .infra-list li, .software-card {
+    transition: transform 240ms var(--anim-easing), box-shadow 240ms var(--anim-easing);
+}
+.service-box:hover, .grid-item:hover, .step:hover, .infra-list li:hover, .software-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 18px 48px rgba(10,35,66,0.12);
+    cursor: default;
+}
+
+/* When revealed, allow a smaller hover lift */
+[data-anim].is-visible:hover { transform: translateY(-6px) scale(1.01); }
+
+/* Section title accent animation */
+.section-title { position: relative; }
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 4px;
+    width: 36px;
+    background: var(--secondary-color);
+    border-radius: 3px;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 520ms var(--anim-easing);
+}
+.section-title.is-visible::after { transform: scaleX(1); }
 
 /* Content Sections */
 .container {

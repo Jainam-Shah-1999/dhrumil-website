@@ -30,7 +30,7 @@ menuLinks.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 /* Scroll-triggered animations using IntersectionObserver */
 (function() {
-    if ('IntersectionObserver' in window === false) return; // graceful fallback
+    if ('IntersectionObserver' in window === false) return;
 
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
@@ -41,24 +41,45 @@ menuLinks.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
 
-    const groups = [
-        { selector: '#about .container', stagger: 20 },
-        { selector: '#services .service-box', stagger: 80 },
-        { selector: '#why-us .grid-item', stagger: 80 },
-        { selector: '#why-us .workflow-steps .step', stagger: 100 },
-        { selector: '#infrastructure .infra-list li', stagger: 60 }
+    const map = [
+        { selector: '#about .section-title', anim: 'slide-left', stagger: 20 },
+        { selector: '#about .text-block p', anim: 'fade-up', stagger: 60 },
+        { selector: '#services .section-title', anim: 'slide-left', stagger: 20 },
+        { selector: '#services .service-box', anim: 'zoom-in', stagger: 80 },
+        { selector: '#why-us .grid-item', anim: 'alternate', stagger: 80 },
+        { selector: '#why-us .workflow-steps .step', anim: 'fade-up', stagger: 100 },
+        { selector: '#infrastructure .infra-list li', anim: 'fade-up', stagger: 50 },
+        { selector: '#software .software-card', anim: 'zoom-in', stagger: 60 }
     ];
 
-    groups.forEach(({ selector, stagger }) => {
+    map.forEach(({ selector, anim, stagger }) => {
         const nodes = document.querySelectorAll(selector);
         nodes.forEach((el, i) => {
-            if (!el.hasAttribute('data-anim')) el.setAttribute('data-anim', 'fade-up');
+            // determine animation type (support 'alternate')
+            let type = anim;
+            if (anim === 'alternate') type = (i % 2 === 0) ? 'slide-left' : 'slide-right';
+
+            if (!el.hasAttribute('data-anim')) el.setAttribute('data-anim', type);
             el.style.setProperty('--delay', `${i * stagger}ms`);
-            // optionally add subtle elevation on reveal for card-like elements
-            if (el.classList.contains('software-card') || el.classList.contains('service-box')) {
+
+            if (el.classList.contains('service-box') || el.classList.contains('software-card')) {
                 el.classList.add('reveal-elevate');
             }
+
+            // small accessibility: ensure focusable elements become visible when focused
+            el.addEventListener('focus', () => el.classList.add('is-visible'));
+
             observer.observe(el);
         });
+    });
+
+    // Also allow hover to trigger a gentle reveal when element is near viewport (optional)
+    document.addEventListener('mouseover', (e) => {
+        const el = e.target.closest('[data-anim]');
+        if (!el) return;
+        // if not visible yet, quickly reveal on hover for better interactivity
+        if (!el.classList.contains('is-visible')) {
+            el.classList.add('is-visible');
+        }
     });
 })();
