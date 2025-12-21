@@ -343,3 +343,37 @@ body {
 @media (max-width: 500px) {
     .software-grid { grid-template-columns: 1fr; }
 }
+
+/* Scroll-triggered animations (reusable) */
+:root {
+    --anim-duration: 620ms;
+    --anim-easing: cubic-bezier(.2,.9,.2,1);
+}
+
+[data-anim] {
+    opacity: 0;
+    transform: translateY(20px) translateZ(0);
+    will-change: opacity, transform;
+    transition-property: opacity, transform;
+    transition-duration: var(--anim-duration);
+    transition-timing-function: var(--anim-easing);
+    transition-delay: var(--delay, 0ms);
+}
+
+[data-anim="fade-up"] { transform: translateY(22px); }
+[data-anim="slide-left"] { transform: translateX(-22px); }
+[data-anim="slide-right"] { transform: translateX(22px); }
+[data-anim="zoom-in"] { transform: scale(.98); }
+
+[data-anim].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Small utility to slightly elevate cards when revealed */
+.reveal-elevate[data-anim].is-visible { box-shadow: 0 12px 36px rgba(10,35,66,0.12); transform: translateY(-6px) scale(1); }
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    [data-anim] { transition: none !important; transform: none !important; opacity: 1 !important; }
+}
